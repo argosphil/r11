@@ -17,3 +17,10 @@ The kernel builds fine, with the config extracted (zcat /proc/config.gz) from th
 Building a working boot.img requires using the Google/Python version of mkbootimg.
 
 After activating devtmpfs, I've activated ttyGS0, which seems to work fine. No fb driver yet, though.
+
+You can get an OTA update containing a partition dump from https:/developers.google.com/android/images-watch .
+
+Magisk works using that image, though the process is a bit involved and involves some blind tapping as the UI doesn't fit the screen.
+
+There's a TWRP port (https://github.com/shinyquagsire23/twrp_google_r11) that apparently worked at some point, but it no longer does since it breaks the 32 MB limit for recovery.img, at least directly following the build instructions.
+
