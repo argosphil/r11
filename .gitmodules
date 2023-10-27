@@ -1,0 +1,7 @@
+[submodule "external/mkbootimg"]
+	path = external/mkbootimg
+	url = https://android.googlesource.com/platform/system/tools/mkbootimg
+[submodule "external/linux-exynos"]
+	path = external/linux-exynos
+	url = https://android.googlesource.com/kernel/exynos
+	branch = android-exynos-r11-4.19-android13-wear-kr3-qpr3-dr
