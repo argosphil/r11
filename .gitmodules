@@ -8,3 +8,15 @@
 [submodule "external/android-platform-system-core"]
 	path = external/android-platform-system-core
 	url = https://android.googlesource.com/platform/system/core
+[submodule "external/android-platform-system-extras"]
+	path = external/android-platform-system-extras
+	url = https://android.googlesource.com/platform/system/extras
+[submodule "external/linux-exynos-devicetree"]
+	path = external/linux-exynos-devicetree
+	url = https://android.googlesource.com/kernel/exynos-modules/devicetree/
+[submodule "external/linux-exynos-config"]
+	path = external/linux-exynos-config
+	url = https://android.googlesource.com/kernel/exynos-modules/config/
+[submodule "external/linux-exynos-drivers"]
+	path = external/linux-exynos-drivers
+	url = https://android.googlesource.com/kernel/exynos-modules/drivers/

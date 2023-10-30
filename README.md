@@ -26,6 +26,10 @@ There's a TWRP port (https://github.com/shinyquagsire23/twrp_google_r11) that ap
 
 * XDA Forum post about the Magisk rooting process: (https://xdaforums.com/t/how-to-root-google-pixel-watch-using-magisk.4592737/preview)
 
+# Reboot into fastboot
+
+Hold both buttons for 20 seconds. Yes, that long. Then hit the top-left and bottom-right edges of the touch screen simultaneously. You have a window of about half a second to do so. Retry until that works out.
+
 # Super partition
 
 Google reimplemented logical volume management (https://source.android.com/docs/core/ota/dynamic_partitions/implement). The new implementation appears to reside entirely in first-stage init, and makes it apparently impossible to mount `/system` and `/system_ext` without either:
