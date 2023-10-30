@@ -25,3 +25,11 @@ Magisk works using that image, though the process is a bit involved and involves
 There's a TWRP port (https://github.com/shinyquagsire23/twrp_google_r11) that apparently worked at some point, but it no longer does since it breaks the 32 MB limit for recovery.img, at least directly following the build instructions.
 
 * XDA Forum post about the Magisk rooting process: (https://xdaforums.com/t/how-to-root-google-pixel-watch-using-magisk.4592737/preview)
+
+# Super partition
+
+Google reimplemented logical volume management (https://source.android.com/docs/core/ota/dynamic_partitions/implement). The new implementation appears to reside entirely in first-stage init, and makes it apparently impossible to mount `/system` and `/system_ext` without either:
+
+* running Google's first-stage init
+* ripping out the relevant code from there
+* using utilities that appear to be limited to creating new images
